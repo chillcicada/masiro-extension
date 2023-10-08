@@ -8,4 +8,4 @@ If u want to built it by yourself, u need to
 
 run `git clone git@github.com:chillcicada/masiro-extension.git`
 
-and then run `npm run build` or `yarn build` or `pnpm build` to build a dist.
+and then run `npm run build` or `pnpm build` to build a dist.
