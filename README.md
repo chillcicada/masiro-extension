@@ -4,7 +4,7 @@ A download extension for masiro.
 
 ---
 
-If u want to built it by yourself, u need to
+If u want to build it by yourself, u need to
 
 run `git clone git@github.com:chillcicada/masiro-extension.git`
 
