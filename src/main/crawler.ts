@@ -17,7 +17,7 @@ const getMeta = (): string => {
   const metaNodes = document.querySelector('.n-detail')?.children;
   if (metaNodes) {
     Array.from(metaNodes).forEach((node) => {
-      metaList.push(node.textContent || '');
+      metaList.push((node as HTMLElement)?.innerText || '');
     });
   }
   return metaList.join('\n');
@@ -77,8 +77,7 @@ const getDocument = async (url: string) => {
 
 // get content of document
 const getDocumentNovelContent = (doc: Document) => {
-  const content = (doc.querySelector('.box-body') as HTMLElement)?.innerText;
-  return content || '';
+  return (doc.querySelector('.box-body') as HTMLElement)?.innerText || '';
 };
 
 // get content of chapter by url

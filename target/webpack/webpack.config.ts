@@ -2,13 +2,17 @@ import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 const config = {
-  entry: './src/index.ts',
+  entry: {
+    main: {
+      import: path.join(__dirname, '../src/main/index.ts'),
+    },
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
   },
   resolve: {
-    extensions: ['.ts', '.js'],
+    extensions: ['.ts', '.tsx', '.js', '.jsx'],
   },
   module: {
     rules: [

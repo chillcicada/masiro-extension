@@ -10,9 +10,10 @@
     "zip": ""
   },
   "keywords": [],
-  "author": "",
+  "author": "chillcicada",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^20.8.4",
     "compressing": "^1.10.0",
     "html-webpack-plugin": "^5.5.3",
     "typescript": "^5.2.2",
